@@ -1,0 +1,78 @@
+/*Color de fondo de la pagina en negro*/
+
+body{
+    background-color: black;
+}
+
+/*color de la primera caja en azul, con un margen de 3px 
+que marca la distancia entre la caja y el limite y un 
+"height" que determina la altura de la caja*/
+
+.header{
+    background-color: #3874bd ;
+    margin: 3px;
+    height: 115px;
+}
+
+/*Esta clase es madre de tres subclases que contiene
+las tres cajas del medio, se creo para dar un diseño
+flexible en el cual los elementos hijos dentro de 
+esta clase se alineen y se distribuyan de manera ordenada
+y la propiedad justify content para alinearlos horizontalmente
+en el centro del contenedor*/
+
+.cajas{
+    display: flex;
+    justify-content: center; 
+}
+
+/*float left para alinear la caja al aldo izquierdo del 
+contenedor, margin para distanciar del limite, un ancho 
+de 33% y una altura de 680px con un color de fondo purpura*/
+    
+
+.caja1{
+    float: left;
+    margin: 3px;
+    width: 33%;
+    height: 680px;
+    border: 3px;
+    background-color: #5f4380;
+}
+
+/*float none para cancelar comportamiento de flotacion 
+y que se ubique de manera central, margin para distanciar 
+del limite, un ancho de 33% y una altura de 680px con un 
+color de fondo rojo*/
+
+.caja2{
+    float: none;
+    margin: 3px;
+    width: 33%;
+    height: 680px;
+    background-color: #bf3936;
+}
+
+/*float right para alinear la caja al aldo derecho del 
+contenedor, margin para distanciar del limite, un ancho 
+de 33% y una altura de 680px con un color de fondo purpura*/
+
+.caja3{
+    float: right;
+    margin: 3px;
+    width: 33%;
+    height: 680px;
+    background-color: #5f4380;
+}
+
+/*El position relative se utilizo para posicionar un elemento
+en relación a su posición original en el flujo del documento,
+una altura de 125px, un top que mide 3px a partir de las cajas
+de arriba y un background color naranja*/
+
+.footer{
+    position: relative;
+    height: 125px;
+    top: 3px;
+    background-color: orange;
+}
